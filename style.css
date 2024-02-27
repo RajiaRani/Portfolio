@@ -5,7 +5,9 @@
     line-height: 1.9;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     background-color: #d6d3d3;
     color: black;
