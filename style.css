@@ -433,4 +433,15 @@ nav .icons {
     .about-col-2{
         font-size: 14px;
     }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+
 }
