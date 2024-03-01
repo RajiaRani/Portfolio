@@ -1,8 +1,8 @@
-let bodyInfoLinks = document.querySelectorByClassName("body-info-links");
+let infoLinks = document.querySelectorByClassName("info-links");
 let bodyContents = document.querySelectorByClassName("body-content");
 function opentab(tabname){
-    for(let bodyInfoLink of bodyInfoLinks){
-        bodyInfoLink.classList.remove("active-link");
+    for(let infoLink of infoLinks){
+        infoLink.classList.remove("active-link");
 
         for(bodyContent of bodyContents){
             bodyContent.classList.remove("active-tab");
