@@ -17,6 +17,10 @@ body{
     background-repeat: no-repeat;
     backface-visibility: visible;
 }
+.body-info-links{
+    display: flex;
+    margin: 20px 0 40px;
+}
 .info-links{
     margin-right: 50px;
     font-size: 18px;
