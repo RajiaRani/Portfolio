@@ -1,5 +1,5 @@
-let infoLinks = document.querySelectorByClassName("info-links");
-let bodyContents = document.querySelectorByClassName("body-content");
+let infoLinks = document.getElementsByClassName("info-links");
+let bodyContents = document.getElementsByClassName("body-content");
 function opentab(tabname){
     for(let infoLink of infoLinks){
         infoLink.classList.remove("active-link");
