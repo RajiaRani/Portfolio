@@ -45,6 +45,7 @@ body{
 
 .body-content  {
     display: none;
+    margin-left: 50px;
 }
 
 .body-content ul li{
