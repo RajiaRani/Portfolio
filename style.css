@@ -55,7 +55,7 @@ body{
 }
 
 
-.body-content .active-tab {
+.body-content.active-tab {
     display: block;
 }
 .body-info-links {
