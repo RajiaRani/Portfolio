@@ -22,8 +22,8 @@ body{
     display: flex;
 }
 .info-links{
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 0px;
+    margin-left: 200px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
@@ -45,7 +45,7 @@ body{
 
 .body-content  {
     display: none;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 .body-content ul li{
