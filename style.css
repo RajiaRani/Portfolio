@@ -1,0 +1,30 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#main-background-contanier{
+    background-image: url(img/rajia3.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    backface-visibility: visible;
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    padding-top: 20%;
+    padding-left: 20%;
+}
+.list-link{
+    display: flex;
+    align-items: center;
+}
+.list-link li{
+    padding-right: 10px;
+}
+.navbar ul li {
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+}
