@@ -1,43 +1,58 @@
-*{
+* {
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.9;
 }
-body{
+
+body,html {
     background-color: rgb(8, 1, 1);
     color: aliceblue;
     margin: 0;
     padding: 0;
-    
-    height: 100vh;  
-    background-image: url(img/rajia3.png); 
-    background-position: right;
-    /* background-size:contain; */
-    background-repeat: no-repeat;
-    backface-visibility: visible;
 }
-.title{
-    margin-top: 20%;
+
+.title {
     margin-left: 21%;
     margin-bottom: -20px;
 }
 
-/* #body-background-content{
-    width: 100%;
-    height: 90vh;
-    background-image: url(img/rajia3.png); 
-    background-position: right;
-    background-size:contain;
-    background-repeat: no-repeat;
-    backface-visibility: visible; 
-} */
-.body-content-home{
-    margin-left: 20%;
+.title h1 {
+    font-size: 50px;
+    margin-bottom: -20px;
 }
-.body-info-links{
+
+.title p {
+    font-size: 24px;
+}
+
+#body-background-content {
+    padding-top: 20%;
+}
+
+#body-background-content {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/rajia3.png);
+    background-position: right;
+    transition: ease-in-out 0.3s;
+    background-repeat: no-repeat;
+    backface-visibility: visible;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 997;
+    overflow-y: auto;
+}
+
+.body-content-home {
+    
+}
+
+.body-info-links {
     display: flex;
 }
 
-.info-links{
+.info-links {
     margin-right: 0px;
     margin-left: 20px;
     font-size: 18px;
@@ -45,7 +60,8 @@ body{
     cursor: pointer;
     position: relative;
 }
-.info-links::after{
+
+.info-links::after {
     content: "";
     width: 0;
     height: 3px;
@@ -55,16 +71,17 @@ body{
     bottom: -6px;
     transition: 0.5s;
 }
-.info-links.active-link::after{
+
+.info-links.active-link::after {
     width: 50%;
 }
 
-.body-content  {
+.body-content {
     display: none;
     /* margin-left: 50px; */
 }
 
-.body-content ul li{
+.body-content ul li {
     list-style: none;
     margin: 10px 0px;
     color: #ff004f;
@@ -74,10 +91,21 @@ body{
 .body-content.active-tab {
     display: block;
 }
+
 .body-info-links {
     display: flex;
     margin: 20px 0 40px;
 }
-.home{
+
+.home {
     margin-left: 150px;
 }
+
+
+
+
+
+
+
+
+
