@@ -2,6 +2,8 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: white;
 }
 #main-background-contanier{
     background-image: url(img/rajia3.png);
@@ -18,6 +20,7 @@ body{
 .list-link{
     display: flex;
     align-items: center;
+    margin-left: -40px;
 }
 .list-link li{
     padding-right: 10px;
