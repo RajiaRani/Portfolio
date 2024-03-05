@@ -7,11 +7,11 @@ body{
     color: aliceblue;
     margin: 0;
     padding: 0;
-    width: 80%;
-    height: 50vh; 
+    
+    height: 100vh;  
     background-image: url(img/rajia3.png); 
     background-position: right;
-    background-size:contain;
+    /* background-size:contain; */
     background-repeat: no-repeat;
     backface-visibility: visible;
 }
