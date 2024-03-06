@@ -9,37 +9,39 @@
 </head>
 
 <body>
-    <div id="main-background-contanier">
-        <div id="main-content">
-            <div id="main-content">
-                <div id="home-content" class="content-section"></div>
-                <div id="about-content" class="content-section" style="display: none;">
-                    <ul>
-                        <li>Education</li>
-                        <li>Experience</li>
-                        <li>Skills</li>
-                    </ul>
-                </div>
-                <div id="projects-content" class="content-section" style="display: none;">Here are my Projects.</div>
-                <!-- Add more sections as needed -->
-            </div>
-            <div class="header">
-                <h1>Rajia Rani</h1>
-                <h2>I'm passionate <span>Web Developer</span> from India.</h2>
-
-                <div class="navbar">
-                    <ul class="list-link">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#certificate">Certificates</a></li>
-                        <li><a href="#resume">Resume</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-
+    <div id="main-background-contanier"> </div>
+    <div id="main-content">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="changeContent('home')">Home</a></li>
+                <li><a href="#" onclick="changeContent('about')">About</a></li>
+                <li><a href="#" onclick="changeContent('portfolio')">Resume</a></li>
+                <li><a href="#" onclick="changeContent('contact')">Cerficiates</a></li>
+                <li><a href="#" onclick="changeContent('contact')">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="home" class="pageContent" style="display: block;">
+            <h2>Welcome to My Portfolio</h2>
+            <p>This is a brief introduction to my work and experiences.</p>
         </div>
+          <div id="about" class="pageContent" style="display: none;">
+              <h2>About Me</h2>
+               <img src="img/rajia3.png" alt="img">
+               <div>
+               <h2>Education</h2>
+               <h2>Experience</h2>
+               <h2>Skills</h2>
+               </div>
+          </div>
+          <div id="portfolio" class="pageContent" style="display: none;">
+              <h2>Portfolio</h2>
+              <p>Check out my work.</p>
+          </div>
+          <div id="contact" class="pageContent" style="display: none;">
+              <h2>Contact</h2>
+              <p>Let's get in touch.</p>
+          </div>
+
     </div>
     <script src="app.js"></script>
 </body>

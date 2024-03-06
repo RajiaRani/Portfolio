@@ -31,5 +31,16 @@ document.querySelector('.navbar').addEventListener('click', function (e) {
 
 
 
+function changeContent(page) {
+    // Hide all content sections
+    document.querySelectorAll('.pageContent').forEach(function(pageContent) {
+        pageContent.style.display = 'none';
+    });
+
+    // Show the selected section
+    document.getElementById(page).style.display = 'block';
+}
+
+
 
    
