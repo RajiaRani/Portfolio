@@ -70,13 +70,16 @@ nav ul li {
     background-color: black;
     color: #fff;
     width: 70%;
-    opacity: 0.6;
+    opacity: 0.8;
+    width: 80%;
 }
 .about-img img {
-    width: 300px;
-    height: 300px;
-    border: 2px solid black;
+    width: 370px;
+    height: 500px;
+    border: 2px solid whitesmoke;
     border-radius: 5px;
+    background-color: #fff;
+    margin-left: 10px;
 }
 .about-me h2{
     font-size: 30px;
@@ -92,7 +95,7 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+   
 }
 .about-contact ul{
     display: flex;
@@ -105,4 +108,21 @@ nav ul li {
    width: 470px;
    font-weight: 500;
    font-size: 25px;
+   border: 2px solid white;
+   padding: 10px;
+}
+.about-info  p{
+    margin-left: 20px;
+    font-size: 23px;
+    line-height: 1.6;
+}
+.about-info h3{
+    margin-left: 20px;
+    font-size: 24px;
+}
+.about-info {
+  height: 500px;
+  border: 2px solid white;
+  margin-left: 20px;
+  margin-right: 20px;
 }
