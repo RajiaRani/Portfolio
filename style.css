@@ -63,6 +63,15 @@ nav ul li {
 }
 
 /* About */
+#about{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    width: 70%;
+    opacity: 0.6;
+}
 .about-img img {
     width: 300px;
     height: 300px;
@@ -76,11 +85,14 @@ nav ul li {
     font-size: 25px;
     margin-top: -10px;
 }
+.about-me h2,p{
+    margin-left: 25px;
+}
 .main-img-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 60%;
+    width: 70%;
 }
 .about-contact ul{
     display: flex;
@@ -90,7 +102,7 @@ nav ul li {
 }
 
 .link{
-   width: 500px;
+   width: 470px;
    font-weight: 500;
    font-size: 25px;
 }
