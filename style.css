@@ -126,3 +126,29 @@ nav ul li {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+.about-projects{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.about-incons{
+    height: 200px;
+    width: 270px;
+    background-color: rgba(0, 0, 0, 0.311);
+    margin-bottom: 20px;
+}
+
+
+
+.progress-range{
+    display: flex;
+    flex-wrap: wrap;
+}
+.progress{
+    border: 2px solid white;
+}
