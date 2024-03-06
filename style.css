@@ -43,3 +43,9 @@ nav ul li {
     display: inline;
     margin: 0 10px;
 }
+
+/* About */
+.about-img img{
+   width: 300px;
+   height: 300px;
+}
