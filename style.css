@@ -55,6 +55,9 @@ nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
+    position: relative;
+    top: 0;
+    left: 300px;
     /* Center-align the nav items */
 }
 
@@ -172,3 +175,7 @@ nav ul li {
     display: flex;
     flex-wrap: wrap;
 }
+
+
+
+
