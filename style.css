@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Young Serif', serif;
+}
 #main-background-img-container{
     background-color: rebeccapurple;
     background: url('img/rajia3.png');
