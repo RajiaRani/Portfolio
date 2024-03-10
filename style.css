@@ -41,7 +41,7 @@ body {
     bottom: 45%;
     left: 20%;
     color: white;
-    padding: 20px;
+    padding: 1.4rem; /* 1rem = 16px */
 }
 .navbar .navbar-links a{
     text-decoration: none;
@@ -49,6 +49,7 @@ body {
 }
 .navbar ul li{
     list-style: none;
+    font-size: 1.2rem;
 }
 .navbar ul {
     display: flex;
