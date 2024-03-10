@@ -146,12 +146,21 @@ p {
     margin-right: 20px;
 }
 
+
+.about-projects{
+    display: flex;
+    margin-top: 100px;
+    padding: 0px 20px;
+}
+
 .about-projects .about-incons {
     position: relative;
     width: 100%;
     text-align: center;
     padding: 30px;
     background: rgba(255, 255, 255, 0.08);
+    margin-left: 20px;
+    height: 200px;
 }
 
 .about-projects .about-incons i {
@@ -159,7 +168,7 @@ p {
     left: 50%;
     top: -25px;
     transform: translateX(-50%);
-    font-size: 24px;
+    font-size: 34px;
     background: rgba(255, 255, 255, 0.1);
     padding: 12px;
     color: #18d26e;
