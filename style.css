@@ -38,8 +38,26 @@ body {
 
 .main-text-container{
     position: absolute;
-    bottom: 30%;
+    bottom: 45%;
     left: 20%;
-    background-color: beige;
+    color: white;
     padding: 20px;
+}
+.navbar .navbar-links a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.main-text-container h1 a{
+    text-align:center;
+    text-decoration: none;
+    color: aliceblue;
 }
