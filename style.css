@@ -1,11 +1,12 @@
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     position: relative;
     overflow: hidden;
     /* background: transparent; */
 }
+
 /* body::before {
     content: "";
     position: fixed;
@@ -19,7 +20,7 @@ body {
     z-index: -1;
   } */
 
- #main-background-contanier {
+#main-background-contanier {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -28,42 +29,48 @@ body {
     background-position: right;
     z-index: -1;
     background-repeat: no-repeat;
-} 
+}
 
 #main-content {
     width: 100%;
-    height: 100%;/* Ensures content area can expand to full height */
+    height: 100%;
+    /* Ensures content area can expand to full height */
 }
 
 
 .pageContent {
-    display: none;/* Initially hide all sections */
+    display: none;
+    /* Initially hide all sections */
     width: 100%;
-    height: 100vh;/* Use viewport height to ensure it can fill the screen */
-    overflow-y: auto;/* Allows content to scroll if it exceeds the viewport height */
-    padding: 20px;/* Add some padding */
-    box-sizing: border-box;/* Includes padding in the height calculation */
+    height: 100vh;
+    /* Use viewport height to ensure it can fill the screen */
+    overflow-y: auto;
+    /* Allows content to scroll if it exceeds the viewport height */
+    padding: 20px;
+    /* Add some padding */
+    box-sizing: border-box;
+    /* Includes padding in the height calculation */
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-  
+
     /* Center-align the nav items */
 }
 
 nav ul li {
-    display: inline-block; 
+    display: inline-block;
 }
 
-#header-container{
+#header-container {
     position: relative;
     top: 500px;
     left: 200px;
 }
 
 /* About */
-#about{
+#about {
     margin: 0 auto;
     padding: 10px;
     background-color: black;
@@ -73,7 +80,7 @@ nav ul li {
     width: 80%;
     position: absolute;
     top: 0;
-    left:200px;
+    left: 200px;
 }
 
 .about-img img {
@@ -84,72 +91,96 @@ nav ul li {
     background-color: #fff;
     margin-left: 10px;
 }
-.about-me h2{
+
+.about-me h2 {
     font-size: 30px;
 }
-.about-me p{
+
+.about-me p {
     font-size: 25px;
     margin-top: -10px;
 }
-.about-me h2,p{
+
+.about-me h2,
+p {
     margin-left: 25px;
 }
-.main-img-container{
+
+.main-img-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
+
 }
-.about-contact ul{
+
+.about-contact ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
 }
 
-.link{
-   width: 470px;
-   font-weight: 500;
-   font-size: 25px;
-   border: 2px solid white;
-   padding: 10px;
+.link {
+    width: 470px;
+    font-weight: 500;
+    font-size: 25px;
+    border: 2px solid white;
+    padding: 10px;
 }
-.about-info  p{
+
+.about-info p {
     margin-left: 20px;
     font-size: 23px;
     line-height: 1.6;
 }
-.about-info h3{
+
+.about-info h3 {
     margin-left: 20px;
     font-size: 24px;
 }
+
 .about-info {
-  height: 500px;
-  border: 2px solid white;
-  margin-left: 20px;
-  margin-right: 20px;
+    height: 500px;
+    border: 2px solid white;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.about-projects{
-   background-color: #fff;
-   color: black;
-   position: relative;
-   width: 100%;
-   padding: 30px 30px 25px 30px;
-   text-align: center;
+.about-projects .about-incons {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
 }
-.about-incons i{
+
+.about-projects .about-incons i {
     position: absolute;
-    left: 50%; 
-} 
+    left: 50%;
+    top: -25px;
+    transform: translateX(-50%);
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    color: #18d26e;
+    border-radius: 50px;
+    line-height: 0;
+}
+
+.about-incons span {
+    font-size: 36px;
+    display: block;
+    font-weight: 600;
+    color: #fff;
+}
 
 
-
-.progress-range{
+.progress-range {
     display: flex;
     flex-wrap: wrap;
 }
-.progress{
+
+.progress {
     border: 2px solid white;
 }
 
@@ -157,20 +188,18 @@ nav ul li {
 
 
 /* Cerificates */
-#certificates{
+#certificates {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
 }
-.certificate-img img{
+
+.certificate-img img {
     width: 300px;
     height: 300px;
 }
-.all-certificates{
+
+.all-certificates {
     display: flex;
     flex-wrap: wrap;
 }
-
-
-
-
