@@ -50,6 +50,10 @@ body {
 .navbar ul li{
     list-style: none;
     font-size: 1.2rem;
+    opacity: 0.6;
+}
+.navbar ul li:hover{
+    opacity: 1.0;
 }
 .navbar ul {
     display: flex;
