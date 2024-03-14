@@ -32,7 +32,7 @@ body {
     /* or use a specific size like 80% auto */
     background-repeat: no-repeat;
     background-position: right;
-    opacity: 0.9;
+    opacity: 1.0;
     background-color: black;
 }
 
@@ -66,3 +66,4 @@ body {
     text-decoration: none;
     color: aliceblue;
 }
+

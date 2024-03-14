@@ -13,6 +13,4 @@ function opentab(tabname){
 
 
 
-// dom events
-let home = document.querySelector(".home"); //access the home
-console.log(home);
+
