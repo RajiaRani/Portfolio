@@ -9,18 +9,16 @@ body {
     font-family: 'Young Serif', serif;
     margin: 0;
     padding: 0;
-
+    background: transparent;
 }
 
+ /* Set the main background container */
 #main-background-img-container {
     position: relative;
     height: 100vh;
 }
 
-
 #main-background-img-container::before {
-    background-position: left;
-    /*The content property is necessary for ::before and ::after pseudo-elements to be generated*/
     content: '';
     position: absolute;
     top: 0;
@@ -29,7 +27,6 @@ body {
     bottom: 0;
     background-image: url('img/rajia3.png');
     background-size:contain;
-    /* or use a specific size like 80% auto */
     background-repeat: no-repeat;
     background-position: right;
     opacity: 1.0;
@@ -43,6 +40,8 @@ body {
     color: white;
     padding: 1.4rem; /* 1rem = 16px */
 }
+
+/* Navbar container */
 .navbar .navbar-links a{
     text-decoration: none;
     color: white;
