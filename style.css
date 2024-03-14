@@ -68,12 +68,14 @@ body {
     text-decoration: none;
     color: aliceblue;
     animation-name: heading ;
-    animation-duration: 1s ;
+    animation-duration: 0.8s ;
     animation-timing-function:  ease-in-out ;
     animation-iteration-count: 1 ;
     transition-delay: 0ms;
     animation-direction:alternate;
 }
+
+ /* For transition property */
 @keyframes heading {
     from{
         font-size: 30px;
@@ -84,6 +86,8 @@ body {
     }
     
 }
+
+
 .navbar ul li a:hover{
     color: tomato;
 }
