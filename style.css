@@ -67,8 +67,23 @@ body {
     text-align:center;
     text-decoration: none;
     color: aliceblue;
+    animation-name: heading ;
+    animation-duration: 1s ;
+    animation-timing-function:  ease-in-out ;
+    animation-iteration-count: 1 ;
+    transition-delay: 0ms;
+    animation-direction:alternate;
 }
-
+@keyframes heading {
+    from{
+        font-size: 30px;
+        color: aliceblue;
+    } to{
+        font-size: 40px;
+        color: tomato;
+    }
+    
+}
 .navbar ul li a:hover{
     color: tomato;
 }
