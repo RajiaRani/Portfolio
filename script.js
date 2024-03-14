@@ -10,3 +10,9 @@ function opentab(tabname){
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
+
+
+
+// dom events
+let home = document.querySelector(".home"); //access the home
+console.log(home);

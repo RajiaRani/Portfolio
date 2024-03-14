@@ -12,35 +12,54 @@
 //     }
 // }
 
-document.querySelector('.navbar').addEventListener('click', function (e) {
-    if (e.target.tagName === 'A') {
-        e.preventDefault(); // Prevent the default anchor action
+
+
+
+
+// document.querySelector('.navbar').addEventListener('click', function (e) {
+//     if (e.target.tagName === 'A') {
+//         e.preventDefault(); // Prevent the default anchor action
         
-        // Hide all content sections
-        document.querySelectorAll('.content-section').forEach(function(section) {
-            section.style.display = 'none';
-        });
+//         // Hide all content sections
+//         document.querySelectorAll('.content-section').forEach(function(section) {
+//             section.style.display = 'none';
+//         });
         
-        const sectionId = e.target.getAttribute('href').substring(1) + '-content';
-        const sectionToShow = document.getElementById(sectionId);
-        if (sectionToShow) {
-            sectionToShow.style.display = 'block'; // Show the selected section
-        }
-    }
-});
+//         const sectionId = e.target.getAttribute('href').substring(1) + '-content';
+//         const sectionToShow = document.getElementById(sectionId);
+//         if (sectionToShow) {
+//             sectionToShow.style.display = 'block'; // Show the selected section
+//         }
+//     }
+// });
 
 
 
-function changeContent(page) {
-    // Hide all content sections
-    document.querySelectorAll('.pageContent').forEach(function(pageContent) {
-        pageContent.style.display = 'none';
-    });
+// function changeContent(page) {
+//     // Hide all content sections
+//     document.querySelectorAll('.pageContent').forEach(function(pageContent) {
+//         pageContent.style.display = 'none';
+//     });
 
-    // Show the selected section
-    document.getElementById(page).style.display = 'block';
-}
+//     // Show the selected section
+//     document.getElementById(page).style.display = 'block';
+// }
 
 
 
-   
+
+
+
+
+// dom events
+let button = document.querySelector("button");
+// console.log(button); 
+ button.addEventListener( 'click', clicked );
+ button.addEventListener('click', sayHello);
+
+function  clicked() {
+    console.log('clicked');
+ }
+ function sayHello(){
+    console.log('hello');
+ }
