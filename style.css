@@ -141,6 +141,169 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*--------------------------------------------------------------
-# Header
+# About.hrml
 --------------------------------------------------------------*/
+nav ul {
+    list-style-type: none;
+    padding: 0;
+
+    /* Center-align the nav items */
+}
+
+nav ul li , a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+#header-container {
+    position: relative;
+    top: 500px;
+    left: 200px;
+}
+
+/* About */
+#about {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    opacity: 0.9;
+    width: 80%;
+}
+
+.about-img img {
+    width: 370px;
+    height: 500px;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-left: 10px;
+}
+
+.about-me h2 {
+    font-size: 30px;
+}
+
+.about-me p {
+    font-size: 25px;
+    margin-top: -10px;
+}
+
+.about-me h2,
+p {
+    margin-left: 25px;
+}
+
+.main-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.about-contact ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.link {
+    width: 470px;
+    font-weight: 500;
+    font-size: 25px;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.about-info p {
+    margin-left: 20px;
+    font-size: 23px;
+    line-height: 1.6;
+}
+
+.about-info h3 {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.about-info {
+    height: 500px;
+    border: 2px solid white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.about-projects{
+    display: flex;
+    margin-top: 100px;
+    padding: 0px 20px;
+}
+
+.about-projects .about-incons {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    margin-left: 20px;
+    height: 200px;
+}
+
+.about-projects .about-incons i {
+    position: absolute;
+    left: 50%;
+    top: -25px;
+    transform: translateX(-50%);
+    font-size: 34px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    color: #18d26e;
+    border-radius: 50px;
+    line-height: 0;
+}
+
+.about-incons span {
+    font-size: 36px;
+    display: block;
+    font-weight: 600;
+    color: #fff;
+}
+.about-interest{
+   margin: 0px 30px;
+}
+
+.interest-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.interest-container .interest{
+ background-color: rgba(255, 255, 255, 0.1);
+ margin-right: 30px;
+ display: flex;
+ align-items: baseline;
+ justify-content: baseline;
+ padding: 20px 25px;
+ width: 250px;
+}
+.interest i{
+    font-size: 28px;
+    padding-right: 20px;
+    color: pink;
+}
+
+.about-skills{
+    margin: 0px 30px;
+}
+.progress-range {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.progress {
+    border: 2px solid white;
+}
 
