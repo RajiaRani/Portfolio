@@ -12,7 +12,7 @@ body {
     background: transparent;
 }
 
- /* Set the main background container */
+/* Set the main background container */
 #main-background-img-container {
     position: relative;
     height: 100vh;
@@ -26,75 +26,82 @@ body {
     right: 0;
     bottom: 0;
     background-image: url('img/rajia3.png');
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
     opacity: 1.0;
     background-color: black;
 }
 
-.main-text-container{
+.main-text-container {
     position: absolute;
     bottom: 45%;
     left: 20%;
     color: white;
-    padding: 1.4rem; /* 1rem = 16px */
+    padding: 1.4rem;
+    /* 1rem = 16px */
 }
 
 
 
 
 /* Navbar container */
-.navbar .navbar-links a{
+.navbar .navbar-links a {
     text-decoration: none;
     color: white;
 }
-.navbar ul li{
+
+.navbar ul li {
     list-style: none;
     font-size: 1.2rem;
     opacity: 0.6;
 }
-.navbar ul li:hover{
+
+.navbar ul li:hover {
     opacity: 1.0;
 }
+
 .navbar ul {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     margin-top: 15px;
 }
-.main-text-container h1 a{
-    text-align:center;
+
+.main-text-container h1 a {
+    text-align: center;
     text-decoration: none;
     color: aliceblue;
-    animation-name: heading ;
-    animation-duration: 0.8s ;
-    animation-timing-function:  ease-in-out ;
-    animation-iteration-count: 1 ;
+    animation-name: heading;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
     transition-delay: 0ms;
-    animation-direction:alternate;
+    animation-direction: alternate;
 }
 
- /* For transition property */
+/* For transition property */
 @keyframes heading {
-    from{
+    from {
         font-size: 30px;
         color: aliceblue;
-    } to{
+    }
+
+    to {
         font-size: 40px;
         color: tomato;
     }
-    
+
 }
 
 
-.navbar ul li a:hover{
+.navbar ul li a:hover {
     color: tomato;
 }
 
 
 /* Social Media links */
-.social-media-links a i:hover{
+.social-media-links a i:hover {
     color: tomato;
 }
 
@@ -104,6 +111,18 @@ body {
     color: white;
     opacity: 0.7;
 }
-.social-media-links{
+
+.social-media-links {
     margin-top: 20px;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
