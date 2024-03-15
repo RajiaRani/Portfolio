@@ -1,14 +1,14 @@
-let tablinks = document.getElementsByClassName("tab-links");
-let tabcontents = document.getElementsByClassName("tab-contents");
-function opentab(tabname){
-    for(let tablink of tablinks){
-        tablink.classList.remove("active-link")
-    }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
+function showSection(sectionId) {
+    // Hide all sections and reset opacity
+    document.querySelectorAll('.content-section').forEach(function(section) {
+        section.style.display = 'none';
+        section.style.opacity = 0;
+    });
+
+    // Use setTimeout to allow the display change to take effect before fading in
+    const selectedSection = document.getElementById(sectionId);
+    selectedSection.style.display = 'block';
+    setTimeout(() => selectedSection.style.opacity = 1, 10); // Short delay before starting the opacity transition
 }
 
 
