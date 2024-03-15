@@ -62,9 +62,7 @@ body {
 
 
 /* Navbar container */
-#navbar {
-    overflow: hidden;
-}
+
 .navbar .navbar-links a {
     text-decoration: none;
     color: white;
