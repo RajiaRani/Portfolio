@@ -39,8 +39,7 @@ body {
     left: 20%;
     color: white;
     padding: 1.4rem; /* 1rem = 16px */
-    background-color: brown;
-    animation: Header 2s ease-in-out 0s 1 normal;
+    animation: Header 1.3s ease-in-out 0s 1 normal;
 }
 @keyframes Header {
     from{
@@ -52,9 +51,9 @@ body {
     } to{
         position: absolute;
         top: 0;
-        left: 25%;
+        left:0;
         right: 0;
-        bottom: 25%;
+        bottom:0;
     }
     
 }
