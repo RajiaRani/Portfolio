@@ -146,8 +146,6 @@ h1, h2, h3, h4, h5, h6 {
 nav ul {
     list-style-type: none;
     padding: 0;
-
-    /* Center-align the nav items */
 }
 
 nav ul li , a{
@@ -199,7 +197,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .about-contact ul {
