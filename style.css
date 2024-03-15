@@ -143,24 +143,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # About.hrml
 --------------------------------------------------------------*/
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
 
-nav ul li , a{
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-}
-
-#header-container {
-    position: relative;
-    top: 500px;
-    left: 200px;
-}
-
-/* About */
 #about {
     margin: 0 auto;
     padding: 20px;
@@ -240,7 +223,7 @@ p {
 }
 
 .about-projects .about-incons {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     text-align: center;
     padding: 30px;
@@ -250,7 +233,7 @@ p {
 }
 
 .about-projects .about-incons i {
-    position: absolute;
+    /* position: absolute; */
     left: 50%;
     top: -25px;
     transform: translateX(-50%);
@@ -302,4 +285,10 @@ p {
 
 .progress {
     border: 2px solid white;
+}
+ .about-navbar{
+  background-color: #18d26e;
+  position: fixed;
+  width: 100%;
+
 }
