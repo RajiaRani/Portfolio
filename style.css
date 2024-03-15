@@ -149,9 +149,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px;
     background-color: black;
     color: #fff;
-    opacity: 0.9;
     width: 80%;
+    opacity: 0.9;
 }
+
 
 .about-img img {
     width: 370px;
@@ -291,6 +292,8 @@ p {
   background-color: black;
   position: sticky;
   width: 100vw;
+  opacity: 0.8;
+  color: white;
 }
 .about-navbar ul {
     display: flex;
@@ -300,4 +303,5 @@ p {
 }
 .about-navbar ul li{
     list-style: none;
+    font-size: 24px;
 }
