@@ -56,6 +56,9 @@ body {
     opacity: 0;
     transition: none;
 } */
+
+
+
 /* ========== Common Styling ============== */
 ul {
     list-style: none;
@@ -73,6 +76,7 @@ ul {
 .shadow-dark {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
+
 
 /* ============ Aside Contanier ============= */
 .aside {
@@ -96,7 +100,14 @@ ul {
     font-size: 30px;
     text-transform: capitalize;
 }
-
+.aside .logo-img img{
+    background-color: red;
+    height: 200px;
+    position: absolute;
+    top: 150px;
+    width: 200px;
+    left: 30px;
+}
 .aside .logo a {
     color: var(--text-black-900);
     font-weight: 700;
