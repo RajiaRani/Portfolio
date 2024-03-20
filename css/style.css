@@ -101,17 +101,42 @@ body {
     font-family: 'poppins';
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    outline: none;
-    box-sizing: border-box;
-}
-
 ::before,
 ::after {
     box-sizing: border-box;
+}
+
+/* ------------------------------------
+  Custom Scrollbar 
+  ------------------------------------ */
+  ::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+/* ---------------- Animation Keyframes ------------------ */
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+   100%{
+    opacity: 1;
+   }
+}
+@keyframes fadeOut {
+    0%{
+        opacity: 1;
+    }
+   100%{
+    opacity: 0;
+   }
 }
 
 /* ================================
@@ -880,6 +905,7 @@ Portfolio Section
     width: 100%;
     z-index: 200;
     visibility: hidden;
+    opacity: 1;
 }
 
 .portfolio-popup.open {
@@ -899,6 +925,7 @@ Portfolio Section
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 1;
 }
 
 .pp-content {
