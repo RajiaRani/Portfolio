@@ -4,7 +4,7 @@
     --bg-black-50: #e8dfec;
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
-    --main-color:  #000000;
+    --main-color: #000000;
     --blue: #11212D;
     --lightBlue: #25374B;
     --light1: #4A5C6A;
@@ -21,7 +21,7 @@
  Global Settings 
  ---------------------------------------- */
 
- * {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -80,12 +80,14 @@ h6 {
 a {
     text-decoration: none;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     outline: none;
 }
+
 body.dark {
     --bg-black-900: #151515;
     --bg-black-100: #222222;
@@ -109,7 +111,7 @@ body {
 /* ------------------------------------
   Custom Scrollbar 
   ------------------------------------ */
-  ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 5px;
 }
 
@@ -123,20 +125,23 @@ body {
 
 /* ---------------- Animation Keyframes ------------------ */
 @keyframes fadeIn {
-    0%{
+    0% {
         opacity: 0;
     }
-   100%{
-    opacity: 1;
-   }
-}
-@keyframes fadeOut {
-    0%{
+
+    100% {
         opacity: 1;
     }
-   100%{
-    opacity: 0;
-   }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 /* ================================
@@ -206,7 +211,7 @@ ul {
     text-transform: capitalize;
 }
 
-.aside .logo-img img{
+.aside .logo-img img {
     height: 200px;
     position: absolute;
     top: 150px;
@@ -215,22 +220,53 @@ ul {
     border: 1px solid var(--white-alpha-40);
     border-radius: 50%;
     box-shadow: 0 10px 20px rgba(14, 14, 16, 0.15);
-} 
-.aside .aside-img .logo-img{
+}
+
+.aside .aside-img .logo-img {
     background-color: var(--white-alpha-25);
     border: 1px solid var(--white-alpha-40);
     border-radius: 10px;
     margin: auto;
 }
+
 .aside-social-media {
-    background-color: red;
     position: absolute;
-    bottom: 50px;
+    bottom: 80px;
 }
 
-.aside-social-media .social-media-links {
-    background-color: #000000;
+.aside-social-media h3 {
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-left:5px;
+    margin-bottom: 5px;
 }
+
+.aside-social-media .social-media-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: var(--bg-black-50);
+    border: 1px solid var(--white-alpha-40);
+    color: var(--skin-color);
+    font-size: 21px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 6px 4px 0 0;
+    transition: all 0.3s ease;
+}
+
+.aside-social-media .social-media-links i {
+    font-size: 26px;
+
+}
+
+.aside-social-media .social-media-links a:hover {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
 .aside .logo a {
     color: var(--text-black-900);
     font-weight: 700;
@@ -964,8 +1000,8 @@ Portfolio Section
 
 .pp-thumbnail img {
     border-radius: 10px;
-     height: 100%;
-    width: 100%; 
+    height: 100%;
+    width: 100%;
 }
 
 .pp-header h3 {
