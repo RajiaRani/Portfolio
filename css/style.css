@@ -89,7 +89,7 @@ ul {
 
 /* ============ Aside Contanier ============= */
 .aside {
-    width: 270px;
+    width: 300px;
     background-color: var(--text-black-100);
     position: fixed;
     top: 0;
@@ -118,6 +118,7 @@ ul {
     left: 30px;
     border: 1px solid var(--white-alpha-40);
     border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(14, 14, 16, 0.15);
 } 
 .aside .aside-img .logo-img{
     background-color: var(--white-alpha-25);
@@ -243,7 +244,7 @@ ul {
 }
 
 .main-content {
-    padding-left: 270px;
+    padding-left: 300px;
 }
 
 .container {
