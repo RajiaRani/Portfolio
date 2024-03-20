@@ -265,6 +265,8 @@ ul {
 .aside-social-media .social-media-links a:hover {
     color: var(--white);
     background-color: var(--blue);
+    cursor: pointer;
+    /* transform: rotateY(90deg); */
 }
 
 .aside .logo a {
