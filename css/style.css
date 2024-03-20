@@ -222,7 +222,15 @@ ul {
     border-radius: 10px;
     margin: auto;
 }
+.aside-social-media {
+    background-color: red;
+    position: absolute;
+    bottom: 50px;
+}
 
+.aside-social-media .social-media-links {
+    background-color: #000000;
+}
 .aside .logo a {
     color: var(--text-black-900);
     font-weight: 700;
