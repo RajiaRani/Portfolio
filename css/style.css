@@ -4,7 +4,16 @@
     --bg-black-50: #e8dfec;
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
-
+    --main-color:  #000000;
+    --blue: #11212D;
+    --lightBlue: #25374B;
+    --light1: #4A5C6A;
+    --light2: #9BA8AB;
+    --cream: #ccd0CF;
+    --white: #ffffff;
+    --white-alpha-40: rgba(255, 255, 255, 0.40);
+    --white-alpha-25: rgba(255, 255, 255, 0.25);
+    --black-filter-blur: blur(5px);
 }
 
 body.dark {
@@ -100,14 +109,23 @@ ul {
     font-size: 30px;
     text-transform: capitalize;
 }
+
 .aside .logo-img img{
-    background-color: red;
     height: 200px;
     position: absolute;
     top: 150px;
-    width: 200px;
+    width: 80%;
     left: 30px;
+    border: 1px solid var(--white-alpha-40);
+    border-radius: 50%;
+} 
+.aside .aside-img .logo-img{
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    border-radius: 10px;
+    margin: auto;
 }
+
 .aside .logo a {
     color: var(--text-black-900);
     font-weight: 700;
