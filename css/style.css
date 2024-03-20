@@ -6,7 +6,8 @@
     --text-black-700: #504e70;
 
 }
-body.dark{
+
+body.dark {
     --bg-black-900: #151515;
     --bg-black-100: #222222;
     --bg-black-50: #393939;
@@ -14,6 +15,7 @@ body.dark{
     --text-black-700: #e9e9e9;
 
 }
+
 body {
     box-sizing: none;
     line-height: 1.5;
@@ -33,10 +35,11 @@ body {
 ::after {
     box-sizing: border-box;
 }
+
 /* ================================
     OVERLAY 
  ================================ */
- /* .overlay{
+/* .overlay{
     position: fixed;
     left: 0;
     top: 0;
@@ -658,28 +661,33 @@ h3.hello span {
     text-align: center;
     font-size: 15px;
 }
-.contact .contact-info-item{
+
+.contact .contact-info-item {
     flex: 0 0 25%;
     max-width: 25%;
     text-align: center;
-    margin-top: 60px; 
+    margin-top: 60px;
     margin-bottom: 60px;
 }
-.contact .contact-info-item .icon{
+
+.contact .contact-info-item .icon {
     display: inline-block;
 }
-.contact .contact-info-item .icon .fa{
+
+.contact .contact-info-item .icon .fa {
     font-size: 25px;
     color: var(--skin-color);
 }
-.contact .contact-info-item h4{
- font-size: 18px;
- font-weight: 700;
- color: var(--text-black-900);
- text-transform: capitalize;
- margin: 15px 0 5px;
+
+.contact .contact-info-item h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
 }
-.contact .contact-info-item p{
+
+.contact .contact-info-item p {
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
@@ -687,19 +695,21 @@ h3.hello span {
 }
 
 .contact .contact-form,
-.contact .contact-form .col-12{
+.contact .contact-form .col-12 {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.contact .contact-form .col-6{
+.contact .contact-form .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
 }
-.contact .contact-form  .form-item{
+
+.contact .contact-form .form-item {
     margin-bottom: 30px;
 }
-.contact .contact-form  .form-item .form-control{
+
+.contact .contact-form .form-item .form-control {
     width: 100%;
     height: 50px;
     border-radius: 25px;
@@ -711,51 +721,182 @@ h3.hello span {
 
 }
 
-.contact .contact-form  .form-item .form-control:focus{
+.contact .contact-form .form-item .form-control:focus {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
-.contact .contact-form  .form-item  textarea.form-control{
+
+.contact .contact-form .form-item textarea.form-control {
     height: 140px;
 }
-.contact .contact-form  .btn{
+
+.contact .contact-form .btn {
     height: 50px;
-    padding:  0 50px;
+    padding: 0 50px;
 }
+
+
+/* ----------------------
+Portfolio Section
+------------------------------- */
+.portfolio-section {
+    padding-bottom: 50px;
+}
+
+.portfolio-item-thumbnail {
+    padding: 10px;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    border-radius: 10px;
+}
+
+.portfolio-item-thumbnail img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-item-details {
+    display: none;
+}
+
+.portfolio-item {
+    width: calc((100%/3) - 30px);
+    margin: 0 15px 30px;
+}
+
+.portfolio-item h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+/* ========================================
+    Portfolio Item Details Popup 
+    =============================================== */
+.portfolio-popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+    visibility: hidden;
+}
+
+.portfolio-popup.open {
+    visibility: visible;
+    overflow-y: auto;
+}
+
+.portfolio-popup.open .pp-content {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+.pp-inner {
+    min-height: 100vh;
+    padding: 40px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pp-content {
+    background-color: var(--white-alpha-25);
+    padding: 30px;
+    border-radius: 30px;
+    max-width: 800px;
+    width: 100%;
+    border: 1px solid var(--white-alpha-40);
+    backdrop-filter: var(--black-filter-blur);
+
+}
+
+.pp-header {
+    position: relative;
+}
+
+.pp-header .btn {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+}
+
+.pp-thumbnail img {
+    border-radius: 10px;
+}
+
+.pp-header h3 {
+    font-size: 25px;
+    text-transform: capitalize;
+    margin: 20px 0 15px;
+}
+
+.pp-body .description {
+    margin-bottom: 30px;
+}
+
+.pp-body .general-info li {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.pp-body .general-info li span {
+    font-weight: 300;
+}
+
+.pp-body .general-info li a {
+    text-transform: lowercase;
+    color: red;
+}
+
 
 
 /* ===============================================================
      MEDIA QUERY 
 ===================================================================== */
-@media(max-width:1199px){
-    .aside{
+@media(max-width:1199px) {
+    .aside {
         left: -270px;
     }
-    .main-content{
+
+    .main-content {
         padding-left: 0;
     }
-    .about .about-content .personal-info .info-item p span{
+
+    .about .about-content .personal-info .info-item p span {
         display: block;
         margin-left: 0;
     }
 }
-@media(max-width: 991px){
+
+@media(max-width: 991px) {
+
     .contact .contact-info-item,
     .portfolio .portfolio-item,
-    .service .service-item{
+    .service .service-item {
         flex: 0 0 50%;
         max-width: 50%;
     }
-    
-    .home .home-info{
+
+    .home .home-info {
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .home .home-img{
+
+    .home .home-img {
         display: none;
     }
 }
 
-@media(max-width: 767px){
+@media(max-width: 767px) {
+
     .contact .contact-info-item,
     .contact .contact-form .col-6,
     .portfolio .portfolio-item,
@@ -763,7 +904,7 @@ h3.hello span {
     .about .about-content .education,
     .about .about-content .experience,
     .about .about-content .skills,
-    .about .about-content .personal-info{
+    .about .about-content .personal-info {
         flex: 0 0 100%;
         max-width: 100%;
     }
