@@ -252,7 +252,7 @@ ul {
     font-weight: 700;
     padding: 15px 20px;
     font-size: 30px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     position: relative;
 }
 
@@ -261,6 +261,7 @@ ul {
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
+    color: var(--skin-color);
 }
 
 .aside .logo a::before {
