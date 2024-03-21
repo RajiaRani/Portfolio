@@ -237,7 +237,7 @@ ul {
 .aside-social-media h3 {
     font-size: 22px;
     text-transform: capitalize;
-    margin-left:5px;
+    margin-left: 5px;
     margin-bottom: 5px;
 }
 
@@ -491,7 +491,9 @@ h3.hello span {
 }
 
 
-/*  ================== About Section ================== */
+/* ----------------------
+About Section 
+------------------------ */
 .section-title {
     flex: 0 0 100%;
     max-width: 100%;
@@ -532,193 +534,184 @@ h3.hello span {
     max-width: 100%;
 }
 
-.about .about-content .about-text {
+.about .about-text {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.about .about-content .about-text h3 {
+.about .about-text h3 {
     font-size: 24px;
     margin-bottom: 15px;
     color: var(--text-black-900);
 }
 
-.about .about-content .about-text h3 span {
+.about .about-text h3 span {
     color: var(--skin-color);
 }
 
-.about .about-content .about-text p {
+.about .about-text p {
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
 }
 
-.about .about-content .personal-info {
-    flex: 0 0 60%;
-    max-width: 60%;
-    margin-top: 40px;
+.about-text {
+    width: 60%;
+    padding: 0 15px;
 }
 
-.about .about-content .skills {
+.about-text h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+.about-img {
+    width: 40%;
+    padding: 0 15px;
+}
+
+.about-text .skills {
+    display: flex;
+    flex-wrap: wrap;
     flex: 0 0 40%;
     max-width: 40%;
     margin-top: 40px;
+
 }
 
-.about .about-content .personal-info .info-item {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.about .about-content .personal-info .info-item p {
-    font-weight: 600;
-    padding: 10px 0;
-    font-size: 16px;
-    color: var(--text-black-900);
-    border-bottom: 1px solid var(--bg-black-50);
-}
-
-.about .about-content .personal-info .info-item p span {
-    font-weight: 400;
-    color: var(--text-black-700);
-    margin-left: 4px;
-    display: inline-block;
-}
-
-.about .about-content .personal-info .buttons {
-    margin-top: 30px;
-}
-
-.about .about-content .personal-info .buttons .btn {
-    margin-right: 15px;
-    margin-top: 10px;
-}
-
-.about .about-content .skills .skill-item {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.about .about-content .skills .skill-item h5 {
-    line-height: 40x;
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--text-black-900);
+.about-text .skill-item {
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    padding: 5px 15px;
     text-transform: capitalize;
+    margin: 0 10px 10px 0;
+    border-radius: 20px;
 }
 
-.about .about-content .skills .skill-item .progress {
-    background-color: var(--bg-black-50);
-    height: 7px;
-    border-radius: 4px;
-    width: 100%;
-    position: relative;
-}
-
-.about .about-content .skills .skill-item {
-    margin-bottom: 25px;
-}
-
-.about .about-content .skills .skill-item .progress .progress-in {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    border-radius: 4px;
-    background-color: var(--skin-color);
-}
-
-.about .about-content .skills .skill-item .skill-percent {
-    position: absolute;
-    right: 0;
-    color: var(--text-black-900);
-    top: -40px;
-    font-weight: 400;
-    line-height: 40px;
-}
-
-.about .about-content .education,
-.about .about-content .experience {
-    flex: 0 0 50%;
-    max-width: 50%;
-    margin-top: 30px;
-}
-
-.about .about-content h3.title {
-    font-size: 24px;
-    margin-bottom: 30px;
-    font-weight: 700;
-    color: var(--text-black-900);
-}
-
-.about .about-content .timeline-box {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.about .about-content .timeline {
-    background-color: var(--bg-black-100);
-    padding: 30px 15px;
-    border: 1px solid var(--bg-black-50);
+.about-img .img-box {
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
     border-radius: 10px;
+    max-width: 380px;
+    margin: auto;
+
+}
+
+.about-img .img-box img {
     width: 100%;
+}
+
+.about-tabs{
+    margin-top: 20px;
+}
+
+.about-tabs .tab-item {
+    padding: 2px 0px;
+    background-color: transparent;
+    text-transform: capitalize;
+    border: none;
+    display: inline-block;
+    font-size: 20px;
+    color: var(--blue);
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 30px;
     position: relative;
+    opacity: 0.5;
+    transition: all 0.3s ease;
 }
 
-.about .about-content .timeline .timeline-item {
-    padding-left: 37px;
-    position: relative;
-    padding-bottom: 50px;
+.about-tabs .tab-item:last-child {
+    margin: 0;
 }
 
-.about .about-content .timeline .timeline-item:last-child {
-    padding-bottom: 0;
-}
-
-.about .about-content .timeline .timeline-item::before {
+.about-tabs .tab-item::before {
     content: '';
     position: absolute;
-    width: 1px;
-    height: 100%;
-    left: 7px;
-    top: 0;
-    background-color: var(--skin-color);
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1.3px;
+    background-color: var(--blue);
+    transition: width 0.3s ease;
 }
 
-.about .about-content .timeline .circle-dot {
+.about-tabs .tab-item:hover::before {
+    width: 100px;
+    cursor: pointer;
+}
+
+.about-tabs .tab-item.active {
+    color: var(--blue);
+    opacity: 1;
+    cursor: all;
+}
+
+.about-text .timeline{
+    position: relative;
+}
+
+.about-text .timeline::before {
+    content: '';
+    background-color: var(--main-color);
+    height: 100%;
+    width: 1.5px;
+    top: 0;
+    left: 5px;
+    position: absolute;
+}
+
+.about-text .tab-content {
+    padding: 40px 0;
+    display: none;
+}
+
+.about-text .tab-content.active {
+    display: block;
+}
+
+.about-text .timeline-item {
+    margin-bottom: 30px;
+    padding: 10px 0 0 40px;
+    position: relative;
+}
+
+.about-text .timeline-item::before {
+    content: '';
     position: absolute;
     left: 0;
-    top: 0;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: var(--skin-color);
+    background-color: var(--main-color);
+    height: 11px;
+    width: 11px;
+    top: 16px;
+    border: 50%;
 }
 
-.about .about-content .timeline .timeline-date {
+.about-text .timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.about-text .timeline-item .date {
+    display: block;
+    color: var(--main-color);
     font-weight: 400;
-    font-size: 14px;
-    margin-bottom: 12px;
-    color: var(--text-black-700);
+    margin: 0 0 10px;
 }
 
-.about .about-content .timeline .timeline-date .fa {
-    margin-right: 5px;
-}
-
-.about .about-content .timeline .timeline-title {
+.about-text .timeline-item h4 {
     font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 15px;
     text-transform: capitalize;
-    color: var(--text-black-900);
+    margin: 0 0 10px;
+    color: var(--main-color);
 }
 
-.about .about-content .timeline .timeline-text {
-    font-size: 16px;
-    line-height: 25px;
-    text-align: justify;
-    color: var(--text-black-700);
+.about-text .timeline-item h4 span {
+    font-weight: 400;
+}
+
+.about-text .btn {
+    margin: 0 15px 15px 0;
 }
 
 
