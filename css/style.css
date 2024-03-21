@@ -751,6 +751,7 @@ About Section
 .about  {
     flex: 0 0 100%;
     max-width: 100%;
+    padding-bottom: 100px;
 }
 
 .about  .about-text {
@@ -818,22 +819,10 @@ About Section
 .skills-container{
     margin-bottom: 100px;
 }
-.skills-container span img{
-   height: 1.2%;
-   width: 1.2%;
-} 
 
-.skills-container div img{
-    height: 1.2%;
-    width: 1.2%;
- } 
-.skills-container span{
-    font-size: 17px;
-}
 .tech-stack {
     display: flex;
     flex-direction: row; 
-    overflow-x: auto;
     white-space: nowrap; 
 }
 
@@ -842,18 +831,17 @@ About Section
     align-items: center;
     gap: 0px; 
     margin-right: 20px; 
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    padding: 5px 10px;
+    box-shadow: 10px 10px 10px rgba(14, 14, 16, 0.15);
 }
 .tech-stack .item img {
     width: 30px; 
     height: auto; 
 }
 
-.lib{
-    background-color: #504e70;
-}
-.tech{
-    background-color: #9BA8AB;
-}
+
 
 
 /* =============== Service Section ==================== */
