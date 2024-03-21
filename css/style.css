@@ -726,8 +726,8 @@ h3.hello span {
     border-radius: 50%;
 }
 
-#seeMoreLink {
-    color: blue;
+.see-more-link {
+    color: var(--skin-color);
     cursor: pointer;
   }
 /* ---------------------=== Education and Experienxe Container  End ===----------------------------- */
