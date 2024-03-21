@@ -819,13 +819,41 @@ About Section
     margin-bottom: 100px;
 }
 .skills-container span img{
-   height: 1.3%;
-   width: 1.3%;
+   height: 1.2%;
+   width: 1.2%;
 } 
+
+.skills-container div img{
+    height: 1.2%;
+    width: 1.2%;
+ } 
 .skills-container span{
-    font-size: 18px;
+    font-size: 17px;
+}
+.tech-stack {
+    display: flex;
+    flex-direction: row; 
+    overflow-x: auto;
+    white-space: nowrap; 
 }
 
+.tech-stack .item {
+    display: inline-flex; 
+    align-items: center;
+    gap: 0px; 
+    margin-right: 20px; 
+}
+.tech-stack .item img {
+    width: 30px; 
+    height: auto; 
+}
+
+.lib{
+    background-color: #504e70;
+}
+.tech{
+    background-color: #9BA8AB;
+}
 
 
 /* =============== Service Section ==================== */
