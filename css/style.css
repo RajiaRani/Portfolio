@@ -473,9 +473,10 @@ h3.hello span {
 }
 
 
-/* ----------------------
-About Section 
------------------------- */
+/* ================================================
+      ABOUT SECTION
+ ================================================ */
+
 .section-title {
     flex: 0 0 100%;
     max-width: 100%;
@@ -582,6 +583,7 @@ About Section
     width: 100%;
 }
 
+/* ---------------------=== Education and Experienxe Container  Start ===----------------------------- */
 .about-tabs{
     margin-top: 20px;
 }
@@ -691,117 +693,20 @@ About Section
 }
 
 .about-text .btn {
-    margin: 0 15px 15px 0;
+     margin: 0 15px 15px 0; 
 }
+/* ---------------------=== Education and Experienxe Container  End ===----------------------------- */
+
+
 /* Inside About Skill Container */
 
-.section-title {
-    flex: 0 0 100%;
-    max-width: 100%;
-    text-transform: capitalize;
-    margin-bottom: 60px;
-}
-
-.section-title h2 {
-    font-size: 40px;
-    color: var(--text-black-900);
-    font-weight: 700;
-    position: relative;
-}
-
-.section-title h2::before {
-    content: '';
-    height: 4px;
-    width: 50px;
-    background-color: var(--skin-color);
-    position: absolute;
-    top: 100%;
-    left: 0;
-}
-
-.section-title h2::after {
-    content: '';
-    height: 4px;
-    width: 25px;
-    background-color: var(--skin-color);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    margin-top: 8px;
-}
-
-.about  {
-    flex: 0 0 100%;
-    max-width: 100%;
+.about{
     padding-bottom: 100px;
-}
-
-.about  .about-text {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.about  .about-text h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: var(--text-black-900);
-}
-
-.about  .about-text h3 span {
-    color: var(--skin-color);
-}
-
-.about  .about-text p {
-    font-size: 16px;
-    line-height: 25px;
-    color: var(--text-black-700);
-}
-.about .skills .skill-item {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.about .skills .skill-item h5 {
-    line-height: 40x;
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--text-black-900);
-    text-transform: capitalize;
-}
-
-.about  .skills .skill-item .progress {
-    background-color: var(--bg-black-50);
-    height: 7px;
-    border-radius: 4px;
-    width: 100%;
-    position: relative;
-}
-
-.about .skills .skill-item {
-    margin-bottom: 25px;
-}
-
-.about  .skills .skill-item .progress .progress-in {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    border-radius: 4px;
-    background-color: var(--skin-color);
-}
-
-.about  .skills .skill-item .skill-percent {
-    position: absolute;
-    right: 0;
-    color: var(--text-black-900);
-    top: -40px;
-    font-weight: 400;
-    line-height: 40px;
 }
 .skills-container{
     margin: 40px 0 100px 0;
-    
 }
+
 
 .tech-stack {
     display: flex;
