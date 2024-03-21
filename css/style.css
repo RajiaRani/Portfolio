@@ -695,6 +695,7 @@ h3.hello span {
 .about-text .btn {
      margin: 0 15px 15px 0; 
 }
+
 .timeline .exp-nav {
    line-height: 30px;
    list-style:square;
@@ -724,6 +725,11 @@ h3.hello span {
     border: 1px solid var(--white-alpha-40);
     border-radius: 50%;
 }
+
+#seeMoreLink {
+    color: blue;
+    cursor: pointer;
+  }
 /* ---------------------=== Education and Experienxe Container  End ===----------------------------- */
 
 
