@@ -75,17 +75,11 @@ h4,
 h5,
 h6 {
     font-weight: 500;
+    color: var(--skin-color);
 }
 
-a {
+a{
     text-decoration: none;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    outline: none;
 }
 
 body.dark {
@@ -108,6 +102,7 @@ body {
     box-sizing: border-box;
 }
 
+
 /* ------------------------------------
   Custom Scrollbar 
   ------------------------------------ */
@@ -122,6 +117,7 @@ body {
 ::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
 }
+
 
 /* ---------------- Animation Keyframes ------------------ */
 @keyframes fadeIn {
@@ -143,6 +139,7 @@ body {
         opacity: 0;
     }
 }
+
 
 /* ================================
     OVERLAY 
@@ -244,6 +241,7 @@ ul {
     color: var(--white);
     background-color: var(--blue);
     cursor: pointer;
+    transform: scale(1.05);
     /* transform: rotateY(90deg); */
 }
 
@@ -801,7 +799,8 @@ About Section
     line-height: 40px;
 }
 .skills-container{
-    margin-bottom: 100px;
+    margin: 40px 0 100px 0;
+    
 }
 
 .tech-stack {
