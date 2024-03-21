@@ -211,23 +211,6 @@ ul {
     text-transform: capitalize;
 }
 
-.aside .logo-img img {
-    height: 200px;
-    position: absolute;
-    top: 150px;
-    width: 80%;
-    left: 30px;
-    border: 1px solid var(--white-alpha-40);
-    border-radius: 50%;
-    box-shadow: 0 10px 20px rgba(14, 14, 16, 0.15);
-}
-
-.aside .aside-img .logo-img {
-    background-color: var(--white-alpha-25);
-    border: 1px solid var(--white-alpha-40);
-    border-radius: 10px;
-    margin: auto;
-}
 
 .aside-social-media {
     position: absolute;
@@ -346,7 +329,7 @@ ul {
 }
 
 .aside .nav {
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 .aside .nav li {
