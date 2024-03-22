@@ -595,7 +595,7 @@ h3.hello span {
     border: none;
     display: inline-block;
     font-size: 25px;
-    color: var(--blue);
+    color: var(--text-black-900);
     cursor: pointer;
     font-weight: 600;
     margin-right: 30px;
@@ -625,7 +625,7 @@ h3.hello span {
 }
 
 .about-tabs .tab-item.active {
-    color: var(--blue);
+    color: var(--text-black-900);
     opacity: 1;
     cursor: all;
 }
