@@ -188,7 +188,7 @@ ul {
 /* ============ Aside Contanier ============= */
 .aside {
     width: 300px;
-    background-color: var(--text-black-100);
+    background-color: var(--bg-black-100);
     position: fixed;
     top: 0;
     left: 0;
