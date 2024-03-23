@@ -1,15 +1,8 @@
 :root {
-    --bg-black-900: #06141B;
-    --bg-black-100:  #11212D;
+    --bg-black-900: #ffffff;
+    --bg-black-100:  #edf1f4;
     --bg-black-50: #25374B;
     --text-black-900:#CCD0CF;
-    --main-color: #000000;
-    --blue: #11212D;
-    --lightBlue: #25374B;
-    --light1: #4A5C6A;
-    --light2: #9BA8AB;
-    --cream: #ccd0CF;
-    --white: #ffffff;
     --white-alpha-40: rgba(255, 255, 255, 0.40);
     --white-alpha-25: rgba(255, 255, 255, 0.25);
     --black-filter-blur: blur(5px);
