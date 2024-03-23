@@ -1,6 +1,6 @@
 :root {
-    --bg-black-900: #ffffff;
-    --bg-black-100:  #edf1f4;
+    --bg-black-900: #000000;
+    --bg-black-100:  #191919;
     --bg-black-50: #25374B;
     --text-black-900:#CCD0CF;
     --white-alpha-40: rgba(255, 255, 255, 0.40);
@@ -23,20 +23,6 @@
 ::before,
 ::after {
     box-sizing: border-box;
-}
-
-body {
-    min-height: 90vh;
-    color: var(--main-color);
-    font-size: 16px;
-    line-height: 1.5;
-    overflow-x: hidden;
-    -webkit-tap-highlight-color: transparent;
-    padding: 35px 15px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    background-attachment: fixed;
 }
 
 /* DARK THEME MODE */
@@ -302,8 +288,8 @@ ul {
 }
 
 .container {
-    max-width: 1200px;
-    margin: auto;
+    max-width: 1100px;
+    margin: auto; 
     width: 100%;
 }
 
@@ -1088,16 +1074,14 @@ Portfolio Section
 
 
 section.active{
-    display: block;
     animation: fadeIn 0.5s ease-in-out forwards;
 }
 section.fade-out{
     animation: fadeOut 0.5s ease-in-out forwards;
 }
 .main-content{
-    width: 1500px;
     margin: auto;
-    position: relative;
+     position: relative;
     transition: all 0.5s ease-in-out;
 }
 
