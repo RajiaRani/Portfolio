@@ -1014,7 +1014,30 @@ Portfolio Section
     color: red;
 }
 
-
+/* ----======================= CERTIFICATES SECTION START ============================= */
+.certificates{
+    margin-left: 300px;
+}
+.certificates .image-container .certificate-img img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+.certificate-img {
+    padding: 10px;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    border-radius: 10px;
+}
+.image-container{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding: 5px;
+}
+/* ----======================= CERTIFICATES SECTION END ============================= */
 
 /* ===============================================================
      MEDIA QUERY 
