@@ -1,9 +1,9 @@
 :root {
-    --bg-black-900: #f2f2fc;
-    --bg-black-100: #fdf9ff;
-    --bg-black-50: #e8dfec;
-    --text-black-900: #302e4d;
-    --text-black-700: #504e70;
+    --bg-black-900: #06141B;
+    --bg-black-100:  #11212D;
+    --bg-black-50: #25374B;
+    --text-black-900:#CCD0CF;
+    --text-black-700:#9BA8AB;
     --main-color: #000000;
     --blue: #11212D;
     --lightBlue: #25374B;
@@ -46,6 +46,22 @@ body {
     font-style: normal;
     background-attachment: fixed;
 }
+/* DARK THEME MODE */
+body.dark {
+    --bg-black-900:  #e9e9e9;;
+    --bg-black-100: #ffffff;
+    --bg-black-50: #393939;
+    --text-black-900: #000000;
+    --text-black-700: #000000;
+}
+
+body {
+    box-sizing: none;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'poppins';
+}
+
 
 body::before {
     content: '';
@@ -82,87 +98,11 @@ a{
     text-decoration: none;
 }
 
-body.dark {
-    --bg-black-900: #151515;
-    --bg-black-100: #222222;
-    --bg-black-50: #393939;
-    --text-black-900: #ffffff;
-    --text-black-700: #e9e9e9;
-}
-
-body {
-    box-sizing: none;
-    line-height: 1.5;
-    font-size: 16px;
-    font-family: 'poppins';
-}
 
 ::before,
 ::after {
     box-sizing: border-box;
 }
-
-
-/* ------------------------------------
-  Custom Scrollbar 
-  ------------------------------------ */
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: var(--white);
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
-}
-
-
-/* ---------------- Animation Keyframes ------------------ */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-
-/* ================================
-    OVERLAY 
- ================================ */
-/* .overlay{
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color:transparent;
-    z-index: 200;
-    visibility: hidden;
-}
-.overlay.active{
-    visibility: visible;
-}
-
-.nav-toggler.hide{
-    opacity: 0;
-    transition: none;
-}  */
-
 
 
 /* ========== Common Styling ============== */
