@@ -3,7 +3,6 @@
     --bg-black-100:  #11212D;
     --bg-black-50: #25374B;
     --text-black-900:#CCD0CF;
-    --text-black-700:#9BA8AB;
     --main-color: #000000;
     --blue: #11212D;
     --lightBlue: #25374B;
@@ -657,7 +656,8 @@ h3.hello span {
 .timeline-logo .logo{
     flex: 0 0 10%;
     max-width: 10%;
-    margin-top: -20px;
+    margin-top: -6%;
+    margin-right: 30px;
 }
  .timeline-logo .logo a img{
     width: 50px;
@@ -678,10 +678,6 @@ h3.hello span {
 .about{
     padding-bottom: 100px;
 }
-.skills-container{
-    margin: 40px 0 100px 0;
-}
-
 
 .tech-stack {
     display: flex;
@@ -693,10 +689,10 @@ h3.hello span {
     display: inline-flex; 
     align-items: center;
     gap: 0px; 
-    margin-right: 20px; 
+    margin-right: 10px; 
     background-color: var(--white-alpha-25);
     border: 1px solid var(--white-alpha-40);
-    padding: 5px 10px;
+    padding: 5px ;
     box-shadow: 10px 10px 10px rgba(14, 14, 16, 0.15);
 }
 .tech-stack .item img {
