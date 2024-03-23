@@ -121,7 +121,9 @@ ul {
 .shadow-dark {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
-
+.text-color{
+    color: var(--text-black-900);
+}
 
 
 /* ============ Aside Contanier ============= */
@@ -474,7 +476,7 @@ h3.hello span {
 .about .about-text p {
     font-size: 16px;
     line-height: 25px;
-    color: var(--text-black-700);
+   
 }
 
 .about-text {
@@ -554,7 +556,7 @@ h3.hello span {
     bottom: 0;
     width: 0%;
     height: 1.3px;
-    background-color: var(--blue);
+    background-color: var(--white);
     transition: width 0.3s ease;
 }
 
@@ -564,7 +566,7 @@ h3.hello span {
 }
 
 .about-tabs .tab-item.active {
-    color: var(--text-black-900);
+    color: var(--skin-color);
     opacity: 1;
     cursor: all;
 }
@@ -575,7 +577,7 @@ h3.hello span {
 
 .about-text .timeline .timeline-info::before {
     content: '';
-    background-color: var(--main-color);
+    background-color:var(--skin-color);
     height: 100%;
     width: 1.5px;
     top: 0;
@@ -602,11 +604,12 @@ h3.hello span {
     content: '';
     position: absolute;
     left: 0;
-    background-color: var(--main-color);
+    background-color: var(--skin-color);
     height: 11px;
     width: 11px;
     top: 16px;
     border: 50%;
+    border-radius: 50%;
 }
 
 .about-text .timeline-item:last-child {
@@ -615,7 +618,7 @@ h3.hello span {
 
 .about-text .timeline-item .date {
     display: block;
-    color: var(--text-black-100);
+    color: var(--text-black-900);
     font-weight: 400;
     margin: 0 0 10px;
 }
@@ -648,6 +651,7 @@ h3.hello span {
     align-items:center;
     justify-content:space-between;
     margin-bottom: 20px;
+
 }
 .timeline-logo .logo-info{
     flex: 0 0 90%;
@@ -658,6 +662,7 @@ h3.hello span {
     max-width: 10%;
     margin-top: -6%;
     margin-right: 30px;
+    text-align: center;
 }
  .timeline-logo .logo a img{
     width: 50px;
@@ -704,7 +709,6 @@ h3.hello span {
     border: 1px solid var(--white-alpha-40);
     padding: 5px;
     box-shadow: 10px 10px 10px rgba(14, 14, 16, 0.15);
-    
 }
 .tech-stack .item img {
     width: 30px; 
