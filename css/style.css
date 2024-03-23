@@ -1086,6 +1086,25 @@ Portfolio Section
     margin: 20px 0;
 }
 
+
+section.active{
+    display: block;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+section.fade-out{
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+.main-content{
+    width: 1500px;
+    margin: auto;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.main-content.fade-out {
+    opacity: 0;
+}
+
 /* ========================================
     Portfolio Item Details Popup 
     =============================================== */
@@ -1171,6 +1190,24 @@ Portfolio Section
 .pp-body .general-info li a {
     text-transform: lowercase;
     color: red;
+}
+
+/* ---------------- Animation Keyframes ------------------ */
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+   100%{
+    opacity: 1;
+   }
+}
+@keyframes fadeOut {
+    0%{
+        opacity: 1;
+    }
+   100%{
+    opacity: 0;
+   }
 }
 
 /* ===============================================================
