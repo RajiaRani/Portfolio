@@ -156,14 +156,14 @@ ul {
     cursor: pointer;
     margin: 6px 4px 0 0;
     transition: all 0.3s ease;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .aside-social-media .social-media-links a:hover {
-    color: var(--white);
+    color: var(--text-black-900);
     background-color: var(--blue);
     cursor: pointer;
     transform: scale(1.05);
-    /* transform: rotateY(90deg); */
 }
 
 .aside .logo a {
@@ -268,7 +268,7 @@ ul {
     color: var(--text-black-900);
     display: block;
     border: none;
-    transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .aside .nav li a i {
@@ -286,6 +286,7 @@ ul {
     border-radius: 20px;
     transform: scale(1.08);
     padding: auto;
+    cursor: pointer;
 }
 
 
