@@ -478,7 +478,7 @@ h3.hello span {
 }
 
 .about .about-img {
-    width: 100%;
+    width: 40%;
     padding: 0 15px;
 }
 .about .about-img .img-box {
@@ -529,10 +529,6 @@ h3.hello span {
     margin: 20px 0;
 }
 
-.about-img {
-    width: 40%;
-    padding: 0 15px;
-}
 
 .about-text .skills {
     display: flex;
@@ -550,15 +546,6 @@ h3.hello span {
     border-radius: 20px;
 }
 
-.about-img .img-box {
-    background-color: var(--white-alpha-25);
-    border: 1px solid var(--white-alpha-40);
-    border-radius: 10px;
-    max-width: 380px;
-    margin: auto;
-
-}
-
 .about-img .img-box img {
     width: 100%;
 }
@@ -567,17 +554,7 @@ h3.hello span {
     padding: 0 15px;
 }
 
-.about-text h3 {
-    font-size: 20px;
-    text-transform: capitalize;
-    margin: 20px 0;
-}
 
-
-.about-text .skills {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 
 /* ---------------------=== Education and Experienxe Container  Start ===----------------------------- */
