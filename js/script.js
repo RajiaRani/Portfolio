@@ -9,23 +9,20 @@ let typed = new Typed(".typing", {
 
 
 /* ----------------------- About Tabs --------------------- */
-const tabContainer = document.querySelectorAll(".about-tabs");
+const tabContainer = document.querySelector(".about-tabs");
 const aboutSection = document.querySelector(".about-section");
 
+tabContainer.addEventListener("click", handleTabClick);
 function handleTabClick(e) {
   if (e.target.classList.contains("tab-item") && !e.target.classList.contains("active") ) {
-    e.currentTarget.querySelector(".tab-item.active").classList.remove("active");
+    tabContainer.querySelector(".active").classList.remove("active");
     e.target.classList.add("active");
     const target = e.target.getAttribute("data-target");
-    const aboutSection = document.querySelector(".about-section");
     aboutSection.querySelector(".tab-content.active").classList.remove("active");
     aboutSection.querySelector(target).classList.add("active");
   }
 }
 
-tabContainer.forEach(container => {
-  container.addEventListener("click", handleTabClick);
-});
 
 
 

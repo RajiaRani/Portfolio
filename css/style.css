@@ -549,13 +549,11 @@ h3.hello span {
 }
 
 /* ---------------------=== Education and Experienxe Container  Start ===----------------------------- */
-.about-tabs,
-.about-skills-tabs {
+.about-tabs {
     margin-top: 20px;
 }
 
-.about-tabs .tab-item,
-.about-skills-tabs .tab-skill-item {
+.about-tabs .tab-item {
     padding: 2px 0px;
     background-color: transparent;
     text-transform: capitalize;
@@ -571,8 +569,7 @@ h3.hello span {
     transition: all 0.3s ease;
 }
 
-.about-tabs .tab-item:last-child,
-.about-skills-tabs .tab-skill-item {
+.about-tabs .tab-item:last-child{
     margin: 0;
 }
 
@@ -592,27 +589,10 @@ h3.hello span {
     cursor: pointer;
 }
 
-.about-tabs .tab-item.active,
-.about-skills-tabs .tab-skill-item {
+.about-tabs .tab-item.active {
     color: var(--skin-color);
     opacity: 1;
     cursor: all;
-}
-
-.about-skills-tabs .tab-skill-item::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 1.3px;
-    background-color: var(--white);
-    transition: width 0.3s ease;
-}
-
-.about-skills-tabs .tab-skill-itemover::before {
-    width: 100px;
-    cursor: pointer;
 }
 
 .about-text .timeline {
