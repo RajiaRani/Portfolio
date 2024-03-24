@@ -3,11 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resume</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/color-1.css">
+    <link rel="stylesheet" href="css/styleswitcher.css">
+
+    <!-- ============= Style Switcher Links ================= -->
+    <link rel="stylesheet" href="css/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/color-5.css" class="alternate-style" title="color-5" disabled>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
-    <!-- ============ Certificates Section Start ============== -->
-    <section class="certificates section padd-15" id="certificates">
+     <!-- ==========Main Container Start ============= -->
+     <div class="main-container">
+        <!-- ========= Aside Container Start ========= -->
+        <div class="aside">
+            <div class="logo">
+                <a href="#"> <span>M</span>ekalathuru </a>
+            </div>
+            <div class="aside-social-media">
+                <h3>Follow Me</h3>
+                <div class="social-media-links">
+                    <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-medium"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+           <nav id="navbar">
+            <ul class="nav">
+                    <li><a href="index.html" class="active nav-item link-item scrollto "><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="about.html" class="nav-item link-item scrollto"><i class="fa-solid fa-user"></i>About</a></li>
+                    <li><a href="resume.html" class="nav-item link-item scrollto"><i class="fa-solid fa-briefcase"></i>Resume</a></li>
+                    <li><a href="contact.html" class="nav-item link-item scrollto"><i class="fa fa-comments"></i>Contact</a></li>
+                    <li><a href="project.html" class="nav-item link-item scrollto"><i class="fa-solid fa-bookmark"></i>Projects</a></li>
+                    <li><a href="certificate.html" class="nav-item link-item scrollto"><i class="fa-solid fa-user-graduate"></i>Certificates</a></li>
+            </ul>
+           </nav>
+        </div>
+        <!-- ========= Aside Container End ========= -->
+
+       <!---------- ========= Main Content Start  ========= ----------->
+      <div class="main-content">
+       <!-- ============ Certificates Section Start ============== -->
+       <section class="certificates section padd-15" id="certificates">
         <div class="container">
             <div class="row">
                 <div class="section-title padd-15">
@@ -69,9 +122,41 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- ============ Certificates Section End ============== -->
+       </section>
+       <!-- ============ Certificates Section End ============== -->
+     </div>
+     <!---------- ========= Main Content End  ========= ----------->
+    </div>
+    <!-- ==========Main Container End ============= -->
+
+<!-- =========== Style Switther Start ============ -->
+<div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+        <i class="fas "></i>
+    </div>
+    <h4>Theme Colors</h4>
+    <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+</div>
+<!-- =========== Style Switther End ============ -->
 
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+    integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="js/script.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/navbarScroll.js"></script>
+<script src="js/popup.js"></script>
 </body>
 </html>
