@@ -477,6 +477,21 @@ h3.hello span {
     margin-top: 8px;
 }
 
+.about .about-img {
+    width: 100%;
+    padding: 0 15px;
+}
+.about .about-img .img-box {
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    border-radius: 10px;
+    max-width: 380px;
+    margin: auto;
+
+}
+.about .about-img .img-box img {
+    width: 100%;
+}
 .about .about-content {
     flex: 0 0 100%;
     max-width: 100%;
@@ -547,6 +562,23 @@ h3.hello span {
 .about-img .img-box img {
     width: 100%;
 }
+.about-text {
+    width: 60%;
+    padding: 0 15px;
+}
+
+.about-text h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+
+.about-text .skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 /* ---------------------=== Education and Experienxe Container  Start ===----------------------------- */
 .about-tabs {
