@@ -479,7 +479,7 @@ h3.hello span {
 
 .about .about-img {
     width: 40%;
-    padding: 0 15px;
+    padding: 20px;
 }
 .about .about-img .img-box {
     background-color: var(--white-alpha-25);
@@ -491,16 +491,13 @@ h3.hello span {
 }
 .about .about-img .img-box img {
     width: 100%;
+    height: 360px;
 }
 .about .about-content {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.about .about-text {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
 
 .about .about-text h3 {
     font-size: 24px;
@@ -546,15 +543,52 @@ h3.hello span {
     border-radius: 20px;
 }
 
-.about-img .img-box img {
-    width: 100%;
-}
+
 .about-text {
     width: 60%;
     padding: 0 15px;
 }
 
 
+
+/* Inside About Skill Container */
+.skills-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+.about {
+    padding-bottom: 100px;
+}
+
+.skills .tech-stack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    white-space: nowrap;
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.skills .tech-stack .item {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    padding: 5px;
+    box-shadow: 10px 10px 10px rgba(14, 14, 16, 0.15);
+}
+
+.skills .tech-stack .item img {
+    width: 30px;
+    height: auto;
+}
 
 /* ---------------------=== Education and Experienxe Container  Start ===----------------------------- */
 .about-tabs {
@@ -714,45 +748,6 @@ h3.hello span {
 
 /* ---------------------=== Education and Experienxe Container  End ===----------------------------- */
 
-
-/* Inside About Skill Container */
-.skills-container {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.about {
-    padding-bottom: 100px;
-}
-
-.tech-stack {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    white-space: nowrap;
-    flex: 0 0 100%;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 10px;
-}
-
-
-.tech-stack .item {
-    display: inline-flex;
-    align-items: center;
-    background-color: var(--white-alpha-25);
-    border: 1px solid var(--white-alpha-40);
-    padding: 5px;
-    box-shadow: 10px 10px 10px rgba(14, 14, 16, 0.15);
-}
-
-.tech-stack .item img {
-    width: 30px;
-    height: auto;
-}
 
 
 
