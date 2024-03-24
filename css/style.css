@@ -1,8 +1,8 @@
 :root {
     --bg-black-900: #000000;
-    --bg-black-100:  #191919;
+    --bg-black-100: #191919;
     --bg-black-50: #25374B;
-    --text-black-900:#CCD0CF;
+    --text-black-900: #CCD0CF;
     --white-alpha-40: rgba(255, 255, 255, 0.40);
     --white-alpha-25: rgba(255, 255, 255, 0.25);
     --black-filter-blur: blur(5px);
@@ -27,7 +27,8 @@
 
 /* DARK THEME MODE */
 body.dark {
-    --bg-black-900:  #e9e9e9;;
+    --bg-black-900: #e9e9e9;
+    ;
     --bg-black-100: #ffffff;
     --bg-black-50: #393939;
     --text-black-900: #000000;
@@ -73,7 +74,7 @@ h6 {
     color: var(--skin-color);
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -101,7 +102,8 @@ ul {
 .shadow-dark {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
-.text-color{
+
+.text-color {
     color: var(--text-black-900);
 }
 
@@ -288,21 +290,22 @@ ul {
     cursor: pointer;
     border-radius: 20px;
 }
+
 /* Basic styles for navbar links */
 #navbar .scrollto {
-    text-decoration: none; 
-    transition: color 0.3s; 
-  }
-  
-  /* Styles for active navbar link */
-    #navbar .scrollto.active {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Styles for active navbar link */
+#navbar .scrollto.active {
     border: 1px solid var(--white-alpha-40);
     background-color: var(--bg-black-50);
-    color: var(--skin-color); 
+    color: var(--skin-color);
     border-radius: 20px;
-    font-weight: bold; 
-  } 
-  
+    font-weight: bold;
+}
+
 /* ================ Main Content ===================== */
 .section {
     background-color: var(--bg-black-900);
@@ -318,7 +321,7 @@ ul {
 
 .container {
     max-width: 1100px;
-    margin: auto; 
+    margin: auto;
     width: 100%;
 }
 
@@ -421,6 +424,7 @@ h3.hello span {
 .btn:hover {
     transform: scale(1.05);
 }
+
 .btn::before {
     content: "";
     position: absolute;
@@ -496,7 +500,7 @@ h3.hello span {
 .about .about-text p {
     font-size: 16px;
     line-height: 25px;
-   
+
 }
 
 .about-text {
@@ -545,11 +549,13 @@ h3.hello span {
 }
 
 /* ---------------------=== Education and Experienxe Container  Start ===----------------------------- */
-.about-tabs{
+.about-tabs,
+.about-skills-tabs {
     margin-top: 20px;
 }
 
-.about-tabs .tab-item {
+.about-tabs .tab-item,
+.about-skills-tabs .tab-skill-item {
     padding: 2px 0px;
     background-color: transparent;
     text-transform: capitalize;
@@ -565,7 +571,8 @@ h3.hello span {
     transition: all 0.3s ease;
 }
 
-.about-tabs .tab-item:last-child {
+.about-tabs .tab-item:last-child,
+.about-skills-tabs .tab-skill-item {
     margin: 0;
 }
 
@@ -585,19 +592,36 @@ h3.hello span {
     cursor: pointer;
 }
 
-.about-tabs .tab-item.active {
+.about-tabs .tab-item.active,
+.about-skills-tabs .tab-skill-item {
     color: var(--skin-color);
     opacity: 1;
     cursor: all;
 }
 
-.about-text .timeline{
+.about-skills-tabs .tab-skill-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1.3px;
+    background-color: var(--white);
+    transition: width 0.3s ease;
+}
+
+.about-skills-tabs .tab-skill-itemover::before {
+    width: 100px;
+    cursor: pointer;
+}
+
+.about-text .timeline {
     position: relative;
 }
 
 .about-text .timeline .timeline-info::before {
     content: '';
-    background-color:var(--skin-color);
+    background-color: var(--skin-color);
     height: 100%;
     width: 1.5px;
     top: 0;
@@ -655,36 +679,39 @@ h3.hello span {
 }
 
 .about-text .btn {
-     margin: 0 15px 15px 0; 
+    margin: 0 15px 15px 0;
 }
 
 .timeline .exp-nav {
-   line-height: 30px;
-   list-style:square;
-   color: var(--text-black-900);
+    line-height: 30px;
+    list-style: square;
+    color: var(--text-black-900);
 }
 
- .timeline-logo{
+.timeline-logo {
     flex: 0 0 40%;
     max-width: 40%;
     display: flex;
-    align-items:center;
-    justify-content:space-between;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 20px;
 
 }
-.timeline-logo .logo-info{
+
+.timeline-logo .logo-info {
     flex: 0 0 90%;
     max-width: 90%;
 }
-.timeline-logo .logo{
+
+.timeline-logo .logo {
     flex: 0 0 10%;
     max-width: 10%;
     margin-top: -6%;
     margin-right: 30px;
     text-align: center;
 }
- .timeline-logo .logo a img{
+
+.timeline-logo .logo a img {
     width: 50px;
     height: auto;
     border: 1px solid var(--white-alpha-40);
@@ -694,45 +721,49 @@ h3.hello span {
 .see-more-link {
     color: var(--skin-color);
     cursor: pointer;
-  }
+}
+
+
 /* ---------------------=== Education and Experienxe Container  End ===----------------------------- */
 
 
 /* Inside About Skill Container */
-.skills-container{
+.skills-container {
     flex: 0 0 100%;
     max-width: 100%;
 }
-.about{
+
+.about {
     padding-bottom: 100px;
 }
 
 .tech-stack {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    white-space: nowrap; 
+    white-space: nowrap;
     flex: 0 0 100%;
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 10px;
 }
 
 
 .tech-stack .item {
-    display: inline-flex; 
+    display: inline-flex;
     align-items: center;
     background-color: var(--white-alpha-25);
     border: 1px solid var(--white-alpha-40);
     padding: 5px;
     box-shadow: 10px 10px 10px rgba(14, 14, 16, 0.15);
 }
+
 .tech-stack .item img {
-    width: 30px; 
-    height: auto; 
+    width: 30px;
+    height: auto;
 }
 
 
@@ -988,7 +1019,7 @@ Portfolio Section
     background-color: var(--white-alpha-25);
     padding: 30px;
     border-radius: 30px;
-    max-width:50;
+    max-width: 50;
     width: 100%;
     border: 1px solid var(--white-alpha-40);
     backdrop-filter: var(--black-filter-blur);
@@ -1042,27 +1073,31 @@ Portfolio Section
 }
 
 /* ----======================= CERTIFICATES SECTION START ============================= */
-.certificates{
+.certificates {
     padding-bottom: 50px;
 }
-.certificates .image-container .certificate-img img{
+
+.certificates .image-container .certificate-img img {
     width: 100%;
     height: 250px;
     border-radius: 10px;
 }
+
 .certificate-img {
     padding: 10px;
     background-color: var(--white-alpha-25);
     border: 1px solid var(--white-alpha-40);
     border-radius: 10px;
 }
-.image-container{
+
+.image-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-gap: 30px;
     padding: 5px;
 }
+
 /* ----======================= CERTIFICATES SECTION END ============================= */
 
 
@@ -1102,13 +1137,15 @@ Portfolio Section
 }
 
 
-section.active{
+section.active {
     animation: fadeIn 0.5s ease-in-out forwards;
 }
-section.fade-out{
+
+section.fade-out {
     animation: fadeOut 0.5s ease-in-out forwards;
 }
-.main-content{
+
+.main-content {
     margin: auto;
     position: relative;
     transition: all 0.5s ease-in-out;
@@ -1212,20 +1249,23 @@ section.fade-out{
 
 /* ---------------- Animation Keyframes ------------------ */
 @keyframes fadeIn {
-    0%{
+    0% {
         opacity: 0;
     }
-   100%{
-    opacity: 1;
-   }
-}
-@keyframes fadeOut {
-    0%{
+
+    100% {
         opacity: 1;
     }
-   100%{
-    opacity: 0;
-   }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 /* ===============================================================
