@@ -283,10 +283,10 @@ ul {
     border: 1px solid var(--white-alpha-40);
     background-color: var(--bg-black-50);
     color: var(--skin-color);
-    border-radius: 20px;
     transform: scale(1.08);
     padding: auto;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 
