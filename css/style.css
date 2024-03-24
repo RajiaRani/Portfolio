@@ -279,7 +279,7 @@ ul {
     color: var(--skin-color);
 }
 
-.aside .nav li a:hover{
+.aside .nav li a:hover {
     border: 1px solid var(--white-alpha-40);
     background-color: var(--bg-black-50);
     color: var(--skin-color);
@@ -288,8 +288,21 @@ ul {
     cursor: pointer;
     border-radius: 20px;
 }
-
-
+/* Basic styles for navbar links */
+#navbar .scrollto {
+    text-decoration: none; 
+    transition: color 0.3s; 
+  }
+  
+  /* Styles for active navbar link */
+    #navbar .scrollto.active {
+    border: 1px solid var(--white-alpha-40);
+    background-color: var(--bg-black-50);
+    color: var(--skin-color); 
+    border-radius: 20px;
+    font-weight: bold; 
+  } 
+  
 /* ================ Main Content ===================== */
 .section {
     background-color: var(--bg-black-900);
