@@ -948,7 +948,14 @@ h3.hello span {
     height: 50px;
     padding: 0 50px;
 }
-
+.contact .contact-location{
+    width: 30%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 /* ----------------------
 Portfolio Section
