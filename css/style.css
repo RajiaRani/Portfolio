@@ -593,7 +593,7 @@ h3.hello span {
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 10px;
-    margin-top: 10px;
+    margin-top: 10;
 }
 
 .skills .tech-stack .item {
