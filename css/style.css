@@ -481,6 +481,9 @@ h3.hello span {
     width: 25%;
     padding: 20px;
 } 
+.about .about-heading {
+    padding: 20px;
+}
 .about .about-img .img-box {
     background-color: var(--white-alpha-25);
     border: 1px solid var(--white-alpha-40);
@@ -516,7 +519,7 @@ h3.hello span {
 
 }
 
-.about-heading {
+.about-text {
     width: 60%;
     padding: 0 15px;
 }
