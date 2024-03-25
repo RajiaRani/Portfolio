@@ -522,14 +522,11 @@ h3.hello span {
 
 }
 
-
 .about-text h3 {
     font-size: 20px;
     text-transform: capitalize;
     margin: 20px 0;
 }
-
-
 .about-text .skills {
     display: flex;
     flex-wrap: wrap;
@@ -545,8 +542,6 @@ h3.hello span {
     margin: 0 10px 10px 0;
     border-radius: 20px;
 }
-
-
 .about-text {
     width: 60%;
     padding: 0 15px;
@@ -573,10 +568,13 @@ h3.hello span {
 }
 
 /* Inside About Skill Container */
+.skills-container .skills{
+    padding-top: 25px;
+}
 .skills-container {
     flex: 0 0 100%;
     max-width: 100%;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .about {
@@ -595,6 +593,7 @@ h3.hello span {
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 10px;
+    margin-top: 10px;
 }
 
 .skills .tech-stack .item {
