@@ -877,7 +877,7 @@ h3.hello span {
   
   .contact .info i {
     font-size: 20px;
-    color: #149ddd;
+    color: var(--skin-color);
     float: left;
     width: 44px;
     height: 44px;
