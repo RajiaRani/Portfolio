@@ -598,6 +598,9 @@ h3.hello span {
 /* ---------------------=== Education and Experienxe Container  Start ===----------------------------- */
 /* ---------- RESUME SECTION -------- */
 
+.resume .container h3 span{
+    color: var(--skin-color);
+}
 .resume .tab-content{
     width: 50%;
     padding:10px 30px;
