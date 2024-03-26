@@ -1,17 +1,20 @@
 // Get all "See More" buttons
-document.addEventListener('DOMContentLoaded', function () {
-    const seeMoreButtons = document.querySelectorAll('.seeMore');
-  
-    seeMoreButtons.forEach(button => {
-        button.addEventListener('click', function () {
-            const moreContent = this.previousElementSibling;
-            if (moreContent.style.display === 'none' || moreContent.style.display === '') {
-                moreContent.style.display = 'block';
-                this.textContent = 'See Less';
+document.addEventListener("DOMContentLoaded", function() {
+    const seeMoreLinks = document.querySelectorAll(".seeMore");
+
+    seeMoreLinks.forEach(link => {
+        link.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default behavior of the anchor tag
+
+            const moreContent = this.previousElementSibling; // Get the previous sibling, which is the hidden content
+
+            if (moreContent.style.display === "none" || moreContent.style.display === "") {
+                moreContent.style.display = "block";
+                this.textContent = "See Less";
             } else {
-                moreContent.style.display = 'none';
-                this.textContent = 'See More';
+                moreContent.style.display = "none";
+                this.textContent = "See More";
             }
         });
     });
-  });
+});
