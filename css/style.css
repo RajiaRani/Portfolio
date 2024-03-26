@@ -689,9 +689,6 @@ h3.hello span {
 .seeMore {
     display: block;
     margin-top: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
     padding: 5px 10px;
     cursor: pointer;
 }
@@ -701,8 +698,7 @@ h3.hello span {
     display: none;
     margin-top: 10px;
     padding: 10px;
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
+    margin-bottom: 12px;
 }
 
 
