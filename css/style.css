@@ -291,20 +291,6 @@ ul {
     border-radius: 20px;
 }
 
-/* Basic styles for navbar links */
-#navbar .scrollto {
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-/* Styles for active navbar link */
-#navbar .scrollto.active {
-    border: 1px solid var(--white-alpha-40);
-    background-color: var(--bg-black-50);
-    color: var(--skin-color);
-    border-radius: 20px;
-    font-weight: bold;
-}
 
 /* ================ Main Content ===================== */
 .section {
@@ -437,11 +423,7 @@ h3.hello span {
     transition: width 0.3s ease;
 }
 
-
-/* ================================================
-      ABOUT SECTION
- ================================================ */
-
+/* SECTION */
 .section-title {
     flex: 0 0 100%;
     max-width: 100%;
@@ -477,6 +459,13 @@ h3.hello span {
     margin-top: 8px;
 }
 
+
+/* ================================================
+      ABOUT SECTION
+ ================================================ */
+ .about, .resume {
+    padding-bottom: 100px;
+}
 .about .about-img {
     width: 27%;
     padding-top: 20px; 
@@ -577,10 +566,6 @@ h3.hello span {
     margin-top: 50px;
 }
 
-.about {
-    padding-bottom: 100px;
-}
-
 .skills .tech-stack {
     display: flex;
     flex-direction: row;
@@ -611,82 +596,44 @@ h3.hello span {
 }
 
 /* ---------------------=== Education and Experienxe Container  Start ===----------------------------- */
-.about-tabs {
-    margin-top: 20px;
+/* ---------- RESUME SECTION -------- */
+
+.resume .tab-content{
+    width: 50%;
+    border: 1px solid red;
+    padding:10px 30px;
+    background-color: rgb(42, 10, 15);
 }
 
-.about-tabs .tab-item {
-    padding: 2px 0px;
-    background-color: transparent;
-    text-transform: capitalize;
-    border: none;
-    display: inline-block;
-    font-size: 25px;
-    color: var(--text-black-900);
-    cursor: pointer;
-    font-weight: 600;
-    margin-right: 30px;
-    position: relative;
-    opacity: 0.5;
-    transition: all 0.3s ease;
+.resume .tab-content {
+    padding: 40px 0;
+    
 }
 
-.about-tabs .tab-item:last-child{
-    margin: 0;
-}
 
-.about-tabs .tab-item::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 1.3px;
-    background-color: var(--white);
-    transition: width 0.3s ease;
-}
-
-.about-tabs .tab-item:hover::before {
-    width: 100px;
-    cursor: pointer;
-}
-
-.about-tabs .tab-item.active {
-    color: var(--skin-color);
-    opacity: 1;
-    cursor: all;
-}
-
-.about-text .timeline {
+.resume .timeline{
+    background-color: gray;
+    margin-top: 15px;
+    padding: 5px 15px;
     position: relative;
 }
-
-.about-text .timeline .timeline-info::before {
+.resume .timeline::before {
     content: '';
-    background-color: var(--skin-color);
+    background-color: var(--main-color);
     height: 100%;
     width: 1.5px;
     top: 0;
     left: 5px;
     position: absolute;
 }
-
-.about-text .tab-content {
-    padding: 40px 0;
-    display: none;
-}
-
-.about-text .tab-content.active {
-    display: block;
-}
-
-.about-text .timeline-item {
+.resume .timeline .timeline-item {
     margin-bottom: 30px;
     padding: 10px 0 0 40px;
     position: relative;
 }
 
-.about-text .timeline-item::before {
+
+.resume .timeline .timeline-item::before {
     content: '';
     position: absolute;
     left: 0;
@@ -697,32 +644,29 @@ h3.hello span {
     border: 50%;
     border-radius: 50%;
 }
-
-.about-text .timeline-item:last-child {
+.resume .timeline  .timeline-item:last-child {
     margin-bottom: 0;
 }
 
-.about-text .timeline-item .date {
+.resume .timeline .timeline-item .date {
     display: block;
     color: var(--text-black-900);
     font-weight: 400;
     margin: 0 0 10px;
 }
 
-.about-text .timeline-item h4 {
+.resume .timeline  .timeline-item h4 {
     font-size: 18px;
     text-transform: capitalize;
     margin: 0 0 10px;
     color: var(--text-black-900);
 }
 
-.about-text .timeline-item h4 span {
+.resume .timeline-item h4 span {
     font-weight: 400;
 }
 
-.about-text .btn {
-    margin: 0 15px 15px 0;
-}
+
 
 .timeline .exp-nav {
     line-height: 30px;
@@ -730,31 +674,22 @@ h3.hello span {
     color: var(--text-black-900);
 }
 
-.timeline-logo {
-    flex: 0 0 40%;
-    max-width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.resume .timeline .timeline-logo {
+   display: flex;
     margin-bottom: 20px;
-
 }
 
 .timeline-logo .logo-info {
-    flex: 0 0 90%;
-    max-width: 90%;
+    display: block;
 }
 
 .timeline-logo .logo {
-    flex: 0 0 10%;
-    max-width: 10%;
-    margin-top: -6%;
-    margin-right: 30px;
-    text-align: center;
+   display: block;
+   margin-right: 14px;
 }
 
 .timeline-logo .logo a img {
-    width: 50px;
+    width: 54px;
     height: auto;
     border: 1px solid var(--white-alpha-40);
     border-radius: 50%;
