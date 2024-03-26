@@ -600,9 +600,7 @@ h3.hello span {
 
 .resume .tab-content{
     width: 50%;
-    border: 1px solid red;
     padding:10px 30px;
-    background-color: rgb(42, 10, 15);
 }
 
 .resume .tab-content {
@@ -610,16 +608,13 @@ h3.hello span {
     
 }
 
-
 .resume .timeline{
-    background-color: gray;
-    margin-top: 15px;
-    padding: 5px 15px;
     position: relative;
 }
+
 .resume .timeline::before {
     content: '';
-    background-color: var(--main-color);
+    background-color: var(--skin-color);
     height: 100%;
     width: 1.5px;
     top: 0;
@@ -631,7 +626,6 @@ h3.hello span {
     padding: 10px 0 0 40px;
     position: relative;
 }
-
 
 .resume .timeline .timeline-item::before {
     content: '';
