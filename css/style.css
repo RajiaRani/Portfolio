@@ -694,7 +694,7 @@ h3.hello span {
     margin-top: 10px;
     cursor: pointer;
     text-decoration: underline;
-    color: var(--text-black-900);
+    color: var(--skin-color);
 }
 
 /* Style for the hidden content */
