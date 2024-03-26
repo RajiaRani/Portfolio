@@ -610,6 +610,7 @@ h3.hello span {
 
 .resume .timeline{
     position: relative;
+    margin-top: 20px;
 }
 
 .resume .timeline::before {
@@ -660,17 +661,10 @@ h3.hello span {
     font-weight: 400;
 }
 
-
-
-.timeline .exp-nav {
-    line-height: 30px;
-    list-style: square;
-    color: var(--text-black-900);
-}
-
 .resume .timeline .timeline-logo {
    display: flex;
-    margin-bottom: 20px;
+  margin: 0px 0px 20px 20px;
+
 }
 
 .timeline-logo .logo-info {
@@ -689,6 +683,16 @@ h3.hello span {
     border-radius: 50%;
 }
 
+
+.timeline .exp-nav {
+    line-height: 30px;
+    list-style: square;
+    color: var(--text-black-900);
+}
+
+.moreContent {
+    display: none; /* Hide content initially */
+}
 .see-more-link {
     color: var(--skin-color);
     cursor: pointer;
