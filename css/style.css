@@ -467,9 +467,8 @@ h3.hello span {
     padding-bottom: 100px;
 }
 .about .about-img {
-    width: 27%;
-    padding-top: 20px; 
-    padding-right: 10px;
+    width: 23%;
+    padding: 30px 10px 10px 10px;
 } 
 .about .about-heading {
     padding: 20px;
@@ -486,7 +485,10 @@ h3.hello span {
 }
 .about .about-img .img-box img {
     width: 100%;
-    height: 300px;
+    height: 270px;
+    box-shadow: 0px 0px 20px rgb(238, 233, 233);
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
     /* border-radius: 10px; */
 }
 .about .about-content {
@@ -516,11 +518,19 @@ h3.hello span {
     text-transform: capitalize;
     margin: 20px 0;
 }
+.about .skills-container h2{
+    color: var(--skin-color);
+    font-size: 30px;
+}
+
 .about-text .skills {
     display: flex;
     flex-wrap: wrap;
     flex: 0 0 60%;
     max-width: 60%;
+}
+.about .skills h3 {
+    font-size: 25px;
 }
 
 .about-text .skill-item {
@@ -558,7 +568,10 @@ h3.hello span {
 
 /* Inside About Skill Container */
 .skills-container .skills{
-    padding-top: 25px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--white-alpha-40);
+    box-shadow: 0 0 24px 0 rgb(214, 207, 207);;
 }
 .skills-container {
     flex: 0 0 100%;
@@ -574,20 +587,30 @@ h3.hello span {
     white-space: nowrap;
     flex: 0 0 100%;
     max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px; */
+    margin-top: 22px;
+}
+.skills .skills-2{
+    /* display: grid;
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 10px;
-    margin-top: 10;
+    margin-top: 22px; */
 }
 
 .skills .tech-stack .item {
     display: inline-flex;
     align-items: center;
-    background-color: var(--white-alpha-25);
-    border: 1px solid var(--white-alpha-40);
+    color: var(--text-black-900);
+     background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40); 
     padding: 5px;
     box-shadow: 10px 10px 10px rgba(14, 14, 16, 0.15);
+    font-size: 21px;
 }
 
 .skills .tech-stack .item img {
