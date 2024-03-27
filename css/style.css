@@ -653,14 +653,14 @@ h3.hello span {
     margin: 0 0 10px;
 }
 
-.resume .timeline  .timeline-item h4 {
+.resume .timeline .timeline-item h4 {
     font-size: 18px;
     text-transform: capitalize;
     margin: 0 0 10px;
     color: var(--text-black-900);
 }
 
-.resume .timeline-item h4 span {
+.resume .timeline-item  h4 span {
     font-weight: 400;
 }
 
